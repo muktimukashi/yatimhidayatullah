@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Program - Yayasan Al-Hikmah</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Yayasan Yatim</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="nav-links" id="navLinks">
+<a href="index.html">Home</a>
+<a href="tentang.html">Tentang</a>
+<a href="program.html">Program</a>
+<a href="donasi.html">Donasi</a>
+<a href="laporan.html">Laporan</a>
+<a href="blog.html">Blog</a>
+<a href="kontak.html">Kontak</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section data-aos="fade-up">
+<div class="container">
+
+<h2>Program Pendidikan & Tahfidz</h2>
+<p>Pendidikan formal serta hafalan Al-Qur'an bagi seluruh anak binaan.</p>
+
+<h3>Kisah Ahmad</h3>
+<p>Ahmad kini telah menghafal 3 juz setelah 2 tahun tinggal di asrama.</p>
+
+<h2>Program Pangan Harian</h2>
+<p>Operasional makan 3 kali sehari untuk 40 anak asrama.</p>
+
+<h2>Program Orang Tua Asuh</h2>
+<p>Donatur dapat menjadi orang tua asuh dengan kontribusi Rp 500.000/bulan.</p>
+
+<h3>Kisah Fatimah</h3>
+<p>Fatimah telah menyelesaikan hafalan 2 juz dan meraih peringkat 5 besar di sekolah.</p>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Yayasan Yatim Hidayatullah</p>
+</footer>
+
+<a href="https://wa.me/628123456789" class="floating-wa" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:1000,once:true});
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
+}
+
+window.addEventListener("scroll",function(){
+const header=document.querySelector("header");
+header.classList.toggle("scrolled",window.scrollY>50);
+});
+</script>
+
+</body>
+</html>

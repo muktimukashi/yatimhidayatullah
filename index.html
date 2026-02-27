@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yayasan Yatim Hidayatullah</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Yayasan Yatim</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="nav-links" id="navLinks">
+<a href="index.html">Home</a>
+<a href="tentang.html">Tentang</a>
+<a href="program.html">Program</a>
+<a href="donasi.html">Donasi</a>
+<a href="laporan.html">Laporan</a>
+<a href="blog.html">Blog</a>
+<a href="kontak.html">Kontak</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+<div>
+<h1>Muliakan Anak Yatim, Raih <span style="color:#d4af37">Keberkahan</span></h1>
+<p>Yayasan Al-Hikmah membina anak yatim piatu dalam asrama Islami dengan pendidikan, tahfidz, dan pembinaan akhlak.</p>
+<a href="donasi.html" class="btn">Donasi Sekarang</a>
+</div>
+</section>
+
+<section data-aos="fade-up">
+<div class="container">
+<h2>Keutamaan Menyantuni Anak Yatim</h2>
+<p style="text-align:center;font-style:italic;max-width:700px;margin:auto">
+“Aku dan orang yang menanggung anak yatim (kedudukannya) di surga seperti ini.” (HR. Bukhari)
+</p>
+</div>
+</section>
+
+<section data-aos="zoom-in">
+<div class="container">
+<h2>Statistik Asrama</h2>
+<div class="stats">
+<div class="stat"><h3>40</h3><p>Anak Tinggal di Asrama</p></div>
+<div class="stat"><h3>120</h3><p>Anak Binaan</p></div>
+<div class="stat"><h3>5</h3><p>Ustadz Pembina</p></div>
+<div class="stat"><h3>10 Tahun</h3><p>Pengabdian</p></div>
+</div>
+</div>
+</section>
+
+<section data-aos="fade-up">
+<div class="container">
+<h2>Video Kegiatan Asrama</h2>
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/MQcN5DtMT-0?si=tHRl96PolEJCdRY3" allowfullscreen></iframe>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Yayasan Yatim Hidayatullah</p>
+</footer>
+
+<a href="https://wa.me/628561929498" class="floating-wa" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:1000,once:true});
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+<script>
+window.addEventListener("scroll",function(){
+const header=document.querySelector("header");
+header.classList.toggle("scrolled",window.scrollY>50);
+});
+</script>
+
+</body>
+</html>

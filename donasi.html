@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donasi - Yayasan Al-Hikmah</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Yayasan Yatim</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="nav-links" id="navLinks">
+<a href="index.html">Home</a>
+<a href="tentang.html">Tentang</a>
+<a href="program.html">Program</a>
+<a href="donasi.html">Donasi</a>
+<a href="laporan.html">Laporan</a>
+<a href="blog.html">Blog</a>
+<a href="kontak.html">Kontak</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section>
+<div class="container">
+
+<h2>Program Prioritas</h2>
+<ul>
+<li>Pembangunan Gedung Asrama Tahap 2</li>
+<li>Operasional Bulanan Rp 35.000.000</li>
+<li>Renovasi Fasilitas Mandi</li>
+</ul>
+
+<h2>Salurkan Donasi Anda</h2>
+
+<select>
+<option>Donasi Bulanan</option>
+<option>Pembangunan</option>
+<option>Zakat</option>
+<option>Infaq</option>
+</select>
+
+<form>
+<input type="text" placeholder="Nama Donatur">
+<input type="number" placeholder="Jumlah Donasi (Rp)">
+<textarea placeholder="Pesan"></textarea>
+<button>Kirim Donasi</button>
+</form>
+
+<p>Rekening: BSI 123456789 a.n Yayasan Al-Hikmah</p>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Yayasan Yatim Hidayatullah</p>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
+}
+window.addEventListener("scroll",function(){
+const header=document.querySelector("header");
+header.classList.toggle("scrolled",window.scrollY>50);
+});
+</script>
+
+</body>
+</html>

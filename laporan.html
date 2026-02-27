@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Laporan - Yayasan Al-Hikmah</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Yayasan Yatim</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="nav-links" id="navLinks">
+<a href="index.html">Home</a>
+<a href="tentang.html">Tentang</a>
+<a href="program.html">Program</a>
+<a href="donasi.html">Donasi</a>
+<a href="laporan.html">Laporan</a>
+<a href="blog.html">Blog</a>
+<a href="kontak.html">Kontak</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section>
+<div class="container">
+
+<h2>Laporan Transparansi</h2>
+<ul>
+<li>Total Donasi 2025: Rp 480.000.000</li>
+<li>Operasional: Rp 300.000.000</li>
+<li>Pendidikan: Rp 90.000.000</li>
+<li>Pembangunan: Rp 90.000.000</li>
+</ul>
+
+<h3>Dokumentasi</h3>
+<div class="card-grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350"></div>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>
+
+© 2026 Yayasan Yatim Hidayatullah
+</p>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
+}
+
+window.addEventListener("scroll",function(){
+const header=document.querySelector("header");
+header.classList.toggle("scrolled",window.scrollY>50);
+});
+</script>
+
+</body>
+</html>

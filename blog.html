@@ -1,77 +1,80 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Blog - Yayasan Al-Hikmah</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-<div class="container">
-<nav>
-<div class="logo">Yayasan Yatim</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-<div class="nav-links" id="navLinks">
-<a href="index.html">Home</a>
-<a href="tentang.html">Tentang</a>
-<a href="program.html">Program</a>
-<a href="donasi.html">Donasi</a>
-<a href="laporan.html">Laporan</a>
-<a href="blog.html">Blog</a>
-<a href="kontak.html">Kontak</a>
-</div>
-</nav>
-</div>
-</header>
+    <header>
+    <div class="container">
+    <nav>
+    <div class="logo">Yayasan Yatim</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="program.html">Program</a>
+    <a href="donasi.html">Donasi</a>
+    <a href="laporan.html">Laporan</a>
+    <a href="blog.html">Blog</a>
+    <a href="kontak.html">Kontak</a>
+    </div>
+    </nav>
+    </div>
+    </header>
 
-<main>
+    <main>
 
-<section>
-<div class="container">
-<h2>Berita & Kisah Anak Binaan</h2>
+    <section>
+    <div class="container">
+    <h2>Berita & Kisah Anak Binaan</h2>
 
-<div class="card-grid">
-<div class="card">
-<div class="card-content">
-<h3>Ahmad Hafal 3 Juz</h3>
-<p>Perjalanan Ahmad dalam menghafal Al-Qur’an.</p>
-</div>
-</div>
+    <div class="card-grid">
+    <div class="card">
+    <div class="card-content">
+    <h3>Ahmad Hafal 3 Juz</h3>
+    <p>Perjalanan Ahmad dalam menghafal Al-Qur’an.</p>
+    </div>
+    </div>
 
-<div class="card">
-<div class="card-content">
-<h3>Santunan Ramadhan</h3>
-<p>Distribusi 200 paket sembako.</p>
-</div>
-</div>
+    <div class="card">
+    <div class="card-content">
+    <h3>Santunan Ramadhan</h3>
+    <p>Distribusi 200 paket sembako.</p>
+    </div>
+    </div>
 
-<div class="card">
-<div class="card-content">
-<h3>Wisuda Tahfidz</h3>
-<p>5 anak berhasil menyelesaikan hafalan 5 juz.</p>
-</div>
-</div>
-</div>
+    <div class="card">
+    <div class="card-content">
+    <h3>Wisuda Tahfidz</h3>
+    <p>5 anak berhasil menyelesaikan hafalan 5 juz.</p>
+    </div>
+    </div>
+    </div>
 
-</div>
-</section>
+    </div>
+    </section>
 
-</main>
+    </main>
 
-<footer>
-<p>© 2026 Yayasan Yatim Hidayatullah</p>
-</footer>
+    <footer>
+    <p>© 2026 Yayasan Yatim Hidayatullah</p>
+    </footer>
 
-<script>
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("active");
-}
+    <script>
+    function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+    }
 
-window.addEventListener("scroll",function(){
-const header=document.querySelector("header");
-header.classList.toggle("scrolled",window.scrollY>50);
-});
-</script>
+    window.addEventListener("scroll",function(){
+    const header=document.querySelector("header");
+    header.classList.toggle("scrolled",window.scrollY>50);
+    });
+    </script>
 
 </body>
 </html>

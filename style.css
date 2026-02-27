@@ -35,7 +35,7 @@ header{
 position:sticky;
 top:0;
 z-index:1000;
-background: #16a34a;
+background: #459a64;
 transition:all 0.3s ease;
 }
 
@@ -65,7 +65,7 @@ color:white;
 header .nav-links a{
 text-decoration:none;
 margin-left:20px;
-color:white;
+color:#2f844e;
 font-weight:600;
 transition:0.3s;
 }
@@ -88,7 +88,10 @@ color:#16a34a;
 display:none;
 font-size:28px;
 cursor:pointer;
-color:white;
+color:#0f766e;   /* hijau gelap */
+background:rgba(255,255,255,0.9);
+padding:8px 12px;
+border-radius:8px;
 }
 
 header.scrolled .hamburger{

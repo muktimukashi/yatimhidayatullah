@@ -1,80 +1,80 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Kontak - Yayasan Al-Hikmah</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    
+    <header>
+    <div class="container">
+    <nav>
+    <div class="logo">Yayasan Yatim</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="program.html">Program</a>
+    <a href="donasi.html">Donasi</a>
+    <a href="laporan.html">Laporan</a>
+    <a href="blog.html">Blog</a>
+    <a href="kontak.html">Kontak</a>
+    </div>
+    </nav>
+    </div>
+    </header>
 
-<header>
-<div class="container">
-<nav>
-<div class="logo">Yayasan Yatim</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-<div class="nav-links" id="navLinks">
-<a href="index.html">Home</a>
-<a href="tentang.html">Tentang</a>
-<a href="program.html">Program</a>
-<a href="donasi.html">Donasi</a>
-<a href="laporan.html">Laporan</a>
-<a href="blog.html">Blog</a>
-<a href="kontak.html">Kontak</a>
-</div>
-</nav>
-</div>
-</header>
+    <main>
 
-<main>
+    <section data-aos="fade-up">
+    <div class="container">
 
-<section data-aos="fade-up">
-<div class="container">
+    <h2>Kontak & Lokasi</h2>
+    <p>Jl. Pendidikan No.10, Jakarta</p>
+    <p>Email: info@yayasanalhikmah.org</p>
+    <p>Telepon: 0812-3456-7890</p>
 
-<h2>Kontak & Lokasi</h2>
-<p>Jl. Pendidikan No.10, Jakarta</p>
-<p>Email: info@yayasanalhikmah.org</p>
-<p>Telepon: 0812-3456-7890</p>
+    <div class="video-wrapper">
+    <iframe 
+    src="https://www.google.com/maps?q=Jakarta&output=embed"
+    allowfullscreen>
+    </iframe>
+    </div>
 
-<div class="video-wrapper">
-<iframe 
-src="https://www.google.com/maps?q=Jakarta&output=embed"
-allowfullscreen>
-</iframe>
-</div>
+    <h3>Kirim Pesan</h3>
+    <form>
+    <input type="text" placeholder="Nama">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Pesan"></textarea>
+    <button>Kirim</button>
+    </form>
 
-<h3>Kirim Pesan</h3>
-<form>
-<input type="text" placeholder="Nama">
-<input type="email" placeholder="Email">
-<textarea placeholder="Pesan"></textarea>
-<button>Kirim</button>
-</form>
+    </div>
+    </section>
 
-</div>
-</section>
+    </main>
 
-</main>
+    <footer>
+    <p>© 2026 Yayasan Yatim Hidayatullah</p>
+    </footer>
 
-<footer>
-<p>© 2026 Yayasan Yatim Hidayatullah</p>
-</footer>
+    <a href="https://wa.me/628123456789" class="floating-wa" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+    </a>
 
-<a href="https://wa.me/628123456789" class="floating-wa" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-</a>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init({duration:1000,once:true});
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("active");
-}
-window.addEventListener("scroll",function(){
-const header=document.querySelector("header");
-header.classList.toggle("scrolled",window.scrollY>50);
-});
-</script>
-
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({duration:1000,once:true});
+    function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+    }
+    window.addEventListener("scroll",function(){
+    const header=document.querySelector("header");
+    header.classList.toggle("scrolled",window.scrollY>50);
+    });
+    </script>
 </body>
 </html>

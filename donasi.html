@@ -1,77 +1,78 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Donasi - Yayasan Al-Hikmah</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+    <div class="container">
+    <nav>
+    <div class="logo">Yayasan Yatim</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="program.html">Program</a>
+    <a href="donasi.html">Donasi</a>
+    <a href="laporan.html">Laporan</a>
+    <a href="blog.html">Blog</a>
+    <a href="kontak.html">Kontak</a>
+    </div>
+    </nav>
+    </div>
+    </header>
 
-<header>
-<div class="container">
-<nav>
-<div class="logo">Yayasan Yatim</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-<div class="nav-links" id="navLinks">
-<a href="index.html">Home</a>
-<a href="tentang.html">Tentang</a>
-<a href="program.html">Program</a>
-<a href="donasi.html">Donasi</a>
-<a href="laporan.html">Laporan</a>
-<a href="blog.html">Blog</a>
-<a href="kontak.html">Kontak</a>
-</div>
-</nav>
-</div>
-</header>
+    <main>
 
-<main>
+    <section>
+    <div class="container">
 
-<section>
-<div class="container">
+    <h2>Program Prioritas</h2>
+    <ul>
+    <li>Pembangunan Gedung Asrama Tahap 2</li>
+    <li>Operasional Bulanan Rp 35.000.000</li>
+    <li>Renovasi Fasilitas Mandi</li>
+    </ul>
 
-<h2>Program Prioritas</h2>
-<ul>
-<li>Pembangunan Gedung Asrama Tahap 2</li>
-<li>Operasional Bulanan Rp 35.000.000</li>
-<li>Renovasi Fasilitas Mandi</li>
-</ul>
+    <h2>Salurkan Donasi Anda</h2>
 
-<h2>Salurkan Donasi Anda</h2>
+    <select>
+    <option>Donasi Bulanan</option>
+    <option>Pembangunan</option>
+    <option>Zakat</option>
+    <option>Infaq</option>
+    </select>
 
-<select>
-<option>Donasi Bulanan</option>
-<option>Pembangunan</option>
-<option>Zakat</option>
-<option>Infaq</option>
-</select>
+    <form>
+    <input type="text" placeholder="Nama Donatur">
+    <input type="number" placeholder="Jumlah Donasi (Rp)">
+    <textarea placeholder="Pesan"></textarea>
+    <button>Kirim Donasi</button>
+    </form>
 
-<form>
-<input type="text" placeholder="Nama Donatur">
-<input type="number" placeholder="Jumlah Donasi (Rp)">
-<textarea placeholder="Pesan"></textarea>
-<button>Kirim Donasi</button>
-</form>
+    <p>Rekening: BSI 123456789 a.n Yayasan Al-Hikmah</p>
 
-<p>Rekening: BSI 123456789 a.n Yayasan Al-Hikmah</p>
+    </div>
+    </section>
 
-</div>
-</section>
+    </main>
 
-</main>
+    <footer>
+    <p>© 2026 Yayasan Yatim Hidayatullah</p>
+    </footer>
 
-<footer>
-<p>© 2026 Yayasan Yatim Hidayatullah</p>
-</footer>
-
-<script>
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("active");
-}
-window.addEventListener("scroll",function(){
-const header=document.querySelector("header");
-header.classList.toggle("scrolled",window.scrollY>50);
-});
-</script>
-
+    <script>
+    function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+    }
+    window.addEventListener("scroll",function(){
+    const header=document.querySelector("header");
+    header.classList.toggle("scrolled",window.scrollY>50);
+    });
+    </script>
 </body>
 </html>

@@ -29,11 +29,13 @@ h1,h2,h3{margin-bottom:20px;}
 p{margin-bottom:20px;}
 ul{margin-bottom:25px;padding-left:20px;}
 
+/* ================= NAVBAR ================= */
+
 header{
 position:sticky;
 top:0;
 z-index:1000;
-background:transparent;
+background: #16a34a;
 transition:all 0.3s ease;
 }
 
@@ -49,29 +51,47 @@ align-items:center;
 padding:20px 0;
 }
 
-.logo{
-font-weight:700;
-color:#16a34a;
-font-size:20px;
-}
-
 .nav-links{
 display:flex;
 }
 
-.nav-links a{
-text-decoration:none;
-margin-left:20px;
-color:#0f766e;
-font-weight:600;
+/* Default (di hero) */
+header .logo{
+font-weight:700;
+font-size:20px;
+color:white;
 }
 
-.nav-links a:hover{color:#16a34a;}
+header .nav-links a{
+text-decoration:none;
+margin-left:20px;
+color:white;
+font-weight:600;
+transition:0.3s;
+}
 
+/* Scroll state */
+header.scrolled .logo{
+color:#16a34a;
+}
+
+header.scrolled .nav-links a{
+color:#0f766e;
+}
+
+header.scrolled .nav-links a:hover{
+color:#16a34a;
+}
+
+/* HAMBURGER */
 .hamburger{
 display:none;
 font-size:28px;
 cursor:pointer;
+color:white;
+}
+
+header.scrolled .hamburger{
 color:#16a34a;
 }
 
